@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+    <div class="container">
+      
+        <div class="abba">
+            <form>
+                <div class="kydee">
+                    <input type="text" name="kydee">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="kydee.value   ='' " class="operal">
+                    <input type="button" value="DE" onclick="kydee.value = kydee.value. toString().slice(0,-1)"  class="operal">
+                    <input type="button" value="."  onclick="kydee.value +='.' "class="operal">
+                    <input type="button" value="/"  onclick="kydee.value +='/' " class="operal">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="kydee.value +='7' ">
+                    <input type="button" value="8" onclick="kydee.value +='8' ">
+                    <input type="button" value="9" onclick="kydee.value +='9' ">
+                    <input type="button" value="*" onclick="kydee.value +='*' ">
+                </div>
+                <div>
+                    <input type="button" value="6" onclick="kydee.value +='6' ">
+                    <input type="button" value="5" onclick="kydee.value +='5' ">
+                    <input type="button" value="4" onclick="kydee.value +='4' ">
+                    <input type="button" value="-" onclick="kydee.value +='-' ">
+                </div>
+                <div>
+                    <input type="button" value="3" onclick="kydee.value +='3' ">
+                    <input type="button" value="2" onclick="kydee.value +='2' ">
+                    <input type="button" value="1" onclick="kydee.value +='1' ">
+                    <input type="button" value="+" onclick="kydee.value +='+' ">
+                </div>
+                    <div>
+                        <input type="button" value="00" onclick="kydee.value +='00' ">
+                        <input type="button" value="0" onclick="kydee.value +='0' ">
+                        <input type="button" value="=" onclick="kydee.value = eval(kydee.value)" class="equal">
+        
+                    </div>
+               
+            </form>
+        </div>
+        <h2>(DEV-KYDEE CAL...)</h2>
+    </div>
+</body>
+</html>
